@@ -1,0 +1,27 @@
+<main>
+    <div id="cart-section">
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Product name</th>
+                    <th>Quantity</th>
+                    <th>Cost</th>
+                    <th>Price</th>
+                    <th colspan="2">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each carts}}
+                    <tr>
+                        <td>{{this.productname}}</td>
+                        <td>{{this.productcost}}</td>
+                        <td>{{this.quantity}}</td>
+                        <td>{{this.price}}</td>
+                        <td><button class="btn-danger">Delete</button></td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        <button class="btn-checkout">Checkout</button>
+    </div>
+</main>

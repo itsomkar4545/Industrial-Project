@@ -1,0 +1,44 @@
+<div id="main-body">
+    <div id="add-form-section">
+       <form action="/type/add" method="post">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Name" id="">
+        </div>
+        <div class="form-group">
+           <button type="submit" class="btn-primary">Add</button>
+        </div>
+       </form>
+    </div>
+    <div id="update-form-section">
+       <form id="update-type-form">
+           <div class="form-group">
+               <input type="number" name="id" id="updateid">
+           </div>
+           <div class="form-group">
+               <input type="text" name="updatename"  id="updatename">
+           </div>
+           <div class="form-group">
+               <button class="btn-primary">Update</button>
+           </div>
+       </form>
+    </div>
+    <div id="table-section">
+        <table>
+            <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th colspan="2">Action</th>
+            </thead>
+            <tbody>
+                {{#each types}}
+                  <tr>
+                      <td>{{this.id}}</td>
+                      <td>{{this.name}}</td>
+                      <td><button class="btn-alert">Update</button></td>
+                      <td><button class="btn-danger">Delete</button></td>
+                  </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>

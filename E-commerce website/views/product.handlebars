@@ -1,0 +1,16 @@
+<main>
+    <div id="product-details">
+        {{#each products}}
+            <div id="image-section">
+                <img src="{{this.image}}" alt="">
+            </div>
+            <div id="info-section">
+                <h4>{{this.name}}</h4>
+                <p>{{this.id}}</p>
+                <p>{{this.cost}}</p>
+                <input type="number" name="quantity" id="#quantity">
+                <button class="btn-primary">Add</button>
+            </div>
+        {{/each}}
+    </div>
+</main>

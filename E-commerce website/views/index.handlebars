@@ -1,0 +1,12 @@
+<main>
+    <div id="product-section">
+        {{#each products}}
+            <div class="product">
+                <img src="{{this.image}}" alt="">
+                <h5>{{this.name}}</h5>
+                <p>{{this.cost}}</p>
+                <a href="/product/details/{{this.id}}"><button class="btn-details"></button></a>
+            </div>
+        {{/each}}
+    </div>
+</main>

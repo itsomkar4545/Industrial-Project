@@ -1,0 +1,74 @@
+<div id="main-body">
+    <div id="add-form-section">
+        <form action="/product/add" method="post">
+          <div class="form-group">
+              <input type="text" name="name" placeholder="Name" id="">
+          </div>
+          <div class="form-group">
+             <input type="number" name="cost" placeholder="Cost" id="">
+          </div>
+          <div class="form-group">
+            <input type="file" name="picture" placeholder="Picture" id="">
+          </div>
+          <div class="form-group">
+            <select name="type" id="">
+                    <option value="0">--Select--</option>
+                {{#each types}}
+                    <option value="{{this.id}}">{{this.name}}</option>
+                {{/each}}
+            </select>
+          </div>
+          <div class="form-group">
+              <button class="btn-primary">Add</button>
+          </div>
+        </form>
+    </div>
+    <div id="update-form-section">
+        <form id="update-product-form">
+            <div class="form-group">
+                <input type="text" name="editname" id="editname">
+            </div>
+            <div class="form-group">
+                <input type="number" name="editcost" id="editcost">
+            </div>
+            <div class="form-group">
+                <select name="edittype" id="editcost">
+                        <option value="0">--Select--</option>
+                    {{#each types}}
+                        <option value="{{this.id}}">{{this.name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-primary">Update</button>
+            </div>
+        </form>
+    </div>
+    <div id="table-section">
+         <table>
+             <thead>
+                 <tr>
+                     <th>Id</th>
+                     <th>Name</th>
+                     <td>Iamge</td>
+                     <th>Type</th>
+                     <th>Cost</th>
+                     <th colspan="2">Action</th>
+                 </tr>
+             </thead>
+             <tbody>
+                 {{#each products}}
+                 <tr>
+                     <td>{{this.id}}</td>
+                     <td>{{this.name}}</td>
+                     <td><img src="{{this.picture}}" alt=""></td>
+                     <td>{{this.type}}</td>
+                     <td>{{this.cost}}</td>
+                     <td><button class="btn-alert">Update</button></td>
+                     <td><button class="btn-danger">Delete</button></td>
+                 </tr>
+                 {{/each}}
+             </tbody>
+         </table>
+    </div>
+</div>
