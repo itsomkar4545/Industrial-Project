@@ -1,6 +1,5 @@
 const db=require('../config/database');
 const express=require('express');
-const { route } = require('../../E-commerce website/controllers');
 const router=express.Router();
 router.post('/add',(req,res)=>{
     const {name,quantity,cost}=req.body;
