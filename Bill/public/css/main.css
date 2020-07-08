@@ -1,0 +1,27 @@
+nav
+{
+    background-color: cornflowerblue;
+
+}
+nav>ul
+{
+    list-style-type: none;
+}
+.nav-component
+{
+    display: inline-block;
+    margin-right: 3vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+.nav-component a
+{
+    text-decoration: none;
+    font-size: large;
+    text-transform: capitalize;
+    color: white;
+}
+.nav-component a:visited
+{
+    color: crimson;
+}
