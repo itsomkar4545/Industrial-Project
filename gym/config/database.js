@@ -8,7 +8,7 @@ const db=mysql.createConnection({
     multipleStatements:true
 });
 db.connect((err)=>{
-    if(err)
+    if(!err)
     {
       console.log('database connected');
     }
@@ -17,3 +17,4 @@ db.connect((err)=>{
        console.log('error'+err);
     }
 });
+module.exports=db;
