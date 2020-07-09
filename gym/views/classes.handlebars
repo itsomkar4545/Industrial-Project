@@ -1,0 +1,65 @@
+<div id="main-body">
+    <div class="create-form-section">
+        <form action="/class/add" method="post">
+            <div class="form-group">
+                <input type="text" name="" id="" class="form-control">
+            </div>
+            <div class="form-group">
+                <select name="instructor" class="form-control" id="">
+                    <option value="0">--Select</option>
+                    {{#each instructors}}
+                     <option value="{{this.id}}">{{this.name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-primary">Create</button>
+            </div>
+        </form>
+    </div>
+    <div class="update-form-section">
+        <form  id="update-class-form">
+            <div class="form-group">
+                <input type="number" id="updateid" placeholder="Class Id" class="form-control" readonly>
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Class name" class="form-control" id="updatename">
+            </div>
+            <div class="form-group">
+                <select name="instructor" id="updateinstructor">
+                    <option value="0">--Select--</option>
+                    {{#each instructors}}
+                        <option value="{{this.id}}">{{this.name}}+"-"+{{this.speciality}} </option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-primary">Update</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="table-section">
+    <table id="class-table">
+        <caption id="table-title">Classes</caption>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Instructor</th>
+                <th colspan="2">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each classes}}
+                <tr>
+                    <td>{{this.id}}</td>
+                    <td>{{this.name}}</td>
+                    <td>{{this.instructor}}</td>
+                    <td><button class="btn-alert">Edit</button></td>
+                    <td><button class="btn-danger">Delete</button></td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

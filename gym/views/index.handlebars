@@ -1,0 +1,13 @@
+<div id="main-body">
+    <div class="class-section">
+        <ul id="class-list">
+        {{#each classes}}
+         <div class="class-section">
+             <h4>{{this.name}}</h4>
+             <p>by &nbsp; {{this.instructor}}</p>
+             <a href="/class/{{this.id}}"><button class="btn-details">Find details</button></a>
+         </div>
+        {{/each}}
+        </ul>
+    </div>
+</div>
