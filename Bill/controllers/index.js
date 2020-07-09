@@ -62,12 +62,12 @@ router.get('/type',(req,res)=>{
         }
     });
 });
-router.get('/transcations',(req,res)=>{
+router.get('/transactions',(req,res)=>{
     let sql='select * from transactions';
     db.query(sql,(err,result)=>{
         if(!err)
         {
-           res.render('transcations',{transactions:result});
+           res.render('transactions',{transactions:result});
         }
         else
         {

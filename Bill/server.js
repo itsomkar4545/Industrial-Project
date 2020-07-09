@@ -35,7 +35,7 @@ app.use(function(req, res, next) {
 app.use('/',index);
 app.use('/product',product);
 app.use('/type',type);
-app.use('/transcations',transcation);
+app.use('/transactions',transcation);
 app.use('/bill',bill);
 app.listen(port,()=>{
     console.log(`server started on ${port}`);

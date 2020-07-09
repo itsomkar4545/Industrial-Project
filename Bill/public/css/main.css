@@ -25,3 +25,70 @@ nav>ul
 {
     color: crimson;
 }
+.body-section
+{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.create-section
+{
+    display: inline-block;
+    margin-left: 20vw;
+}
+.update-section
+{
+    display: inline-block;
+    margin-left: 20vw;
+}
+.form-group
+{
+    margin-bottom: 5vh;
+}
+.form-control
+{
+    height: 4vh;
+    font-size: large;
+    border-radius: 3.5px;
+}
+#update-product
+{
+    margin-top: 10vh;
+}
+#product-table
+{
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
+#product-table th
+{
+    padding-left:3vw;
+}
+#product-table td
+{
+    padding-left:3vw;
+}
+#table-title
+{
+    margin-bottom: 5vh;
+    font-size: x-large;
+}
+.btn-primary
+{
+    font-size: large;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    text-align: center;
+}
+#type-table th
+{
+    padding-left: 3vw;
+}
+#type-table td
+{
+    padding-left: 3vw;
+}
+#type-table
+{
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
