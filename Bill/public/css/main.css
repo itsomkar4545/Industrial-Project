@@ -92,3 +92,34 @@ nav>ul
     margin-left: 10vw;
     margin-top: 5vh;
 }
+.main-body
+{
+    margin-top:5vh;
+    margin-left: 10vw;
+}
+#transactions-table th
+{
+    padding-left:3vw;
+}
+#transactions-table td
+{
+    padding-left:3vw;
+}
+.form-column
+{
+    display: inline-block;
+    margin-right: 3vw;
+}
+.bill-section
+{
+    margin-top: 5vh;
+    margin-left: 10vw;
+}
+#bill-table th
+{
+    padding-left: 3vw;
+}
+#bill-table td
+{
+    padding-left:3vw ;
+}

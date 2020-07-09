@@ -1,0 +1,25 @@
+<div class="main-body">
+    <table id="transactions-table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Bill Info</th>
+                <th>Date</th>
+                <th>Total</th>
+                <th colspan="2">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each transactions}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.billinfo}}</td>
+                <td>{{this.date}}</td>
+                <td>{{this.total}}</td>
+                <td><button class="btn-alert">Edit</button></td>
+                <td><button class="btn-danger">Delete</button></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
