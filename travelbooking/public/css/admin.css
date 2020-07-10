@@ -1,0 +1,63 @@
+nav
+{
+    background-color: teal;
+    color: white;
+}
+ul
+{
+    list-style-type: none;
+    
+}
+.navbar-component
+{
+    display: inline-block;
+    margin-right: 3vw;
+    padding-top:5vh;
+    padding-bottom: 5vh;
+
+}
+a
+{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    
+}
+.create-form-section
+{
+    display: inline-block;
+    margin-left: 5vw;
+}
+.update-form-section
+{
+    display: inline-block;
+    margin-left: 5vw;
+}
+.table-section
+{
+    margin-top: 5vh;
+    margin-left: 10vw;
+
+}
+th
+{
+    padding-right: 3vw;
+}
+tr
+{
+    padding-right: 3vw;
+}
+#table-title
+{
+    margin-bottom: 3vh;
+    font-size: large;
+}
+.form-control
+{
+    height: 5vh;
+    font-size: large;
+}
+.form-group
+{
+    margin-bottom: 2vh;
+}

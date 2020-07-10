@@ -1,0 +1,88 @@
+<div class="main-body">
+    <div class="create-form-section">
+         <form action="/hotel/add" method="post">
+          <div class="form-group">
+              <input type="text" name="name" class="form-control" placeholder="Name" id="">
+          </div>
+          <div class="form-group">
+              <input type="number" name="cost" placeholder="Cost" class="form-control" id="">
+          </div>
+          <div class="form-group">
+              <select name="type" id="" class="form-control">
+                  <option value="0">--Select--</option>
+                  {{#each types}}
+                  <option value="{{this.id}}">{{this.name}}</option>
+                  {{/each}}
+              </select>
+          </div>
+          <div class="form-group">
+              <select name="location" id="" class="form-control">
+                <option value="0">--Select--</option>
+                {{#each locations}}
+                 <option value="{{this.id}}">{{this.name}}</option>
+                {{/each}}  
+              </select>
+          </div>
+          <div class="form-group">
+              <button class="btn-primary">Create</button>
+          </div>
+         </form>
+    </div>
+    <div class="update-form-section">
+         <form  >
+          <div class="form-group">
+              <input type="text" name="name" class="form-control" placeholder="Name" id="name">
+          </div>
+          <div class="form-group">
+              <input type="number" name="cost" placeholder="Cost" class="form-control" id="cost">
+          </div>
+          <div class="form-group">
+              <select name="type" id="type" class="form-control">
+                  <option value="0">--Select--</option>
+                  {{#each types}}
+                  <option value="{{this.id}}">{{this.name}}</option>
+                  {{/each}}
+              </select>
+          </div>
+          <div class="form-group">
+              <select name="location" id="location" class="form-control">
+                <option value="0">--Select--</option>
+                {{#each locations}}
+                 <option value="{{this.id}}">{{this.name}}</option>
+                {{/each}}  
+              </select>
+          </div>
+          <div class="form-group">
+              <button class="btn-primary">Update</button>
+          </div>
+         </form>
+    </div>
+</div>
+<div class="table-section">
+    <table id="hotel-table">
+        <caption id="table-title">Hotels</caption>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Cost</th>
+                <th>Type</th>
+                <th>Location</th>
+                <th colspan="2">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each hotels}}
+             <tr>
+                 <td>{{this.id}}</td>
+                 <td>{{this.name}}</td>
+                 <td>{{this.cost}}</td>
+                 <td>{{this.type}}</td>
+                 <td>{{this.location}}</td>
+                 <td><button class="btn-alert">Edit</button></td>
+                 <td><button class="btn-danger">Delete</button></td>
+             </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

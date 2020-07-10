@@ -1,0 +1,52 @@
+<div class="main-body">
+    <div class="create-form-section">
+        <form action="/packages/add" method="post">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Name" id="">
+            </div>
+            <div class="form-group">
+                <input type="number" name="cost" placeholder="Cost" id="">
+            </div>
+            <div class="form-group">
+                <button class="btn-primary">Add</button>
+            </div>
+        </form>
+    </div>
+    <div class="update-form-section">
+         <form >
+             <div class="form-group">
+                 <input type="text" class="form-control" id="name">
+             </div>
+             <div class="form-group">
+                 <input type="number" name="cost" id="cost" class="form-control">
+             </div>
+             <div class="form-control">
+                 <button class="btn-primary">Update</button>
+             </div>
+         </form>
+    </div>
+</div>
+<div class="table-section">
+    <table id="holiday-table">
+        <caption id="table-title">Holiday Packages</caption>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Cost</th>
+                <th colspan="2">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each packages}}
+                <tr>
+                    <td>{{this.id}}</td>
+                    <td>{{this.name}}</td>
+                    <td>{{this.cost}}</td>
+                    <td><button class="btn-alert">Edit</button></td>
+                    <td><button class="btn-danger">Delete</button></td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,39 @@
+<div class="main-body">
+    <div class="update-form-section">
+        <form >
+            <div class="form-group">
+                <input type="number" name="id" id="id">
+            </div>
+            <div class="form-group">
+                <input type="number" name="persons" id="persons">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-primart">Update</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="table-section">
+    <table id="bookings-table">
+        <caption id="table-title">Bookings</caption>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th colspan="2">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each bookings}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.name}}</td>
+                <td>{{this.type}}</td>
+                <td><button class="btn-alert">Edit</button></td>
+                <td><button class="btn-danger">Delete</button></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

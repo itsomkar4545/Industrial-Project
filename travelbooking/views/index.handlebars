@@ -1,0 +1,22 @@
+<div class="main-body">
+    <div id="hotel-section">
+       {{#each hotels}}
+        <div class="hotel-card">
+            <h4>{{this.Name}}</h4>
+            <p>{{this.type}}</p>
+            <p>{{this.cost}}</p>
+            <p>{{this.location}}</p>
+           <!-- <button class="btn-primary">Book now</button>-->
+        </div>
+       {{/each}}
+    </div>
+    <div id="holiday-section">
+       {{#each holidays}}
+       <div class="holiday-card">
+           <h4>{{this.name}}</h4>
+           <p>{{this.cost}}</p>
+           <!--<button class="btn-primary">Book now</button>-->
+       </div>
+       {{/each}}
+    </div>
+</div>
