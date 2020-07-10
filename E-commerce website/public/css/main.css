@@ -1,0 +1,19 @@
+nav
+{
+    background-color: black;
+    color: white;
+}
+ul
+{
+    list-style-type: none;
+
+}
+.navbar-component
+{
+    display: inline-block;
+    margin-right: 3vw;
+}
+a
+{
+    text-decoration: none;
+}

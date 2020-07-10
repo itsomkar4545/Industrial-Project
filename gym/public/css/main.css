@@ -1,0 +1,95 @@
+nav
+{
+    background-color: black;
+    color: white;
+}
+ul
+{
+    list-style-type: none;
+
+}
+.navbar-component
+{
+    display: inline-block;
+    margin-right: 3vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    
+}
+#main-body
+{
+    margin-top: 5vh;
+    margin-left: 10vw;
+
+}
+.create-form-section
+{
+    display: inline-block;
+    justify-content: center;
+    margin-left: 10vw;
+}
+.update-form-section
+{
+    display: inline-block;
+    justify-content: center;
+    margin-left: 10vw;
+}
+.form-group
+{
+    margin-bottom: 5vh;
+
+}
+.form-group input
+{
+    height: 3vh;
+    border-radius: 1.5px;
+    font-size: large;
+}
+.form-group select
+{
+    width: 12vw;
+    height: 3vh;
+    font-size: large;
+}
+.btn-primary
+{
+    text-align: center;
+    font-size: large;
+    margin-left: 3vw;
+}
+.table-section
+{
+    margin-top: 5vh;
+    margin-left: 10vw;
+}
+#table-title
+{
+    margin-bottom: 2vh;
+    font-size: large;
+}
+th
+{
+    padding-left: 3vw;
+}
+tr
+{
+    padding-left: 3vw;
+}
+#create-form-section
+{
+    display: inline-block;
+    justify-content: center;
+    margin-left: 10vw;
+}
+#update-form-section
+{
+    display: inline-block;
+    justify-content: center;
+    margin-left: 10vw;
+}

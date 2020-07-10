@@ -57,7 +57,7 @@ router.put('/:id',(req,res)=>{
         }
     });
 });
-route.delete('/:id',(req,res)=>{
+router.delete('/:id',(req,res)=>{
     const {id}=req.params;
     let sql='delete * from classes where id=?';
     let body=[id];

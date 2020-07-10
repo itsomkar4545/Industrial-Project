@@ -78,7 +78,7 @@ router.get('/instructors',(req,res)=>{
         }
     });
 });
-router.get('/member',(req,res)=>{
+router.get('/members',(req,res)=>{
     let sql='select * from members';
     db.query(sql,(err,result)=>{
         if(!err)
