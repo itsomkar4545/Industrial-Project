@@ -1,0 +1,10 @@
+<div class="ad-body">
+    {{#each ad}}
+        <img src="{{this.picture}}" alt="" class="ad-picture">
+        <h4>{{this.title}}</h4>
+        <p class="category-heading">{{this.category}}</p>
+        <p class="posted-email-info">{{this.email}}</p>
+        <p class="posted-name-info">{{this.username}}</p>
+        <p class="ad-description">{{this.description}}</p>
+    {{/each}}
+</div>

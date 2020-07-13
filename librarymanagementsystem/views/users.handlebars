@@ -1,0 +1,62 @@
+<div class="form-section">
+    <div class="add-form-section">
+        <form action="/user/add" method="post">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Name" id="" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email" id="" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phone" placeholder="Phone no" id="" class="form-control">
+            </div>
+            <div class="form-group">
+                <button class="btn-primary">Add</button>
+            </div>
+        </form>
+    </div>
+    <div class="update-form-section">
+        <form id="update-form">
+            <div class="form-group">
+                <input type="number" name="id" id="id" class="form-control" readonly>
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Name" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email" id="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phone" placeholder="Phone" id="phone" class="form-control">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-primary">Update</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="table-section">
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th colspan="2">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each users}}
+               <tr>
+                   <td>{{this.id}}</td>
+                   <td>{{this.name}}</td>
+                   <td>{{this.email}}</td>
+                   <td>{{this.phone}}</td>
+                   <td><button class="btn-alert">Edit</button></td>
+                   <td><button class="btn-danger">Delete</button></td>
+               </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

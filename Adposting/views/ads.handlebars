@@ -1,0 +1,24 @@
+<div class="table-section">
+    <table id="ads-table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Postedby</th>
+                <th>Picture</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each ads}}
+                <tr>
+                    <td>{{this.id}}</td>
+                    <td>{{this.title}}</td>
+                    <td>{{this.descrption}}</td>
+                    <td>{{this.postedby}}</td>
+                    <td><img src="{{this.picture}}" alt=""></td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

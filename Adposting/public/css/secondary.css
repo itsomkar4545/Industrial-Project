@@ -1,0 +1,67 @@
+nav
+{
+    background-color: rebeccapurple;
+    color: white;
+}
+nav ul
+{
+  list-style-type: none;
+}
+.navbar-component
+{
+    display: inline-block;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 3vw;
+}
+.navbar-component a
+{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+.form-section
+{
+    margin-top: 5vh;
+    margin-left: 10vw;
+}
+.form-group
+{
+    margin-bottom: 2vh;
+}
+.form-control
+{
+    height: 4vh;
+    width: 10vw;
+    font-size: large;
+    border-radius: 1.5px;
+
+}
+.btn-primary
+{
+    margin-left: 2vw;
+    font-size: large;
+}
+#add-form
+{
+    display: inline-block;
+    margin-right: 5vw;
+}
+#updateform
+{
+    display: inline-block;
+}
+.table-section
+{
+    margin-top: 5vh;
+    margin-left: 10vw;
+
+}
+th
+{
+    padding-right: 5vw;
+}
+td
+{
+    padding-right: 5vw;
+}

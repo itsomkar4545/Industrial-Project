@@ -1,0 +1,67 @@
+<div class="main-body">
+    <div class="add-form-section">
+        <form action="/book/add" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="text" name="name" id="" placeholder="Book Name" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="file" name="picture" class="form-control" id="">
+            </div>
+            <div class="form-group">
+                <input type="text" name="author" placeholder="Author" id="" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="isbn" placeholder="ISBN" id="" class="form-control">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-primary">Add</button>
+            </div>
+        </form>
+    </div>
+    <div class="update-form-section">
+        <form id="update-book">
+            <div class="form-group">
+                <input type="number" name="id" id="id" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="isbn" id="isbn" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="author" id="author" class="form-control">
+            </div>
+             <div class="form-group">
+                <button type="submit" class="btn-primary">Add</button>
+            </div>
+        </form>
+    </div>
+    <div class="table-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Picture</th>
+                    <th colspan="2">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each books}}
+                    <tr>
+                        <td>{{this.id}}</td>
+                        <td>{{this.name}}</td>
+                        <td>{{this.author}}</td>
+                        <td>{{this.isbn}}</td>
+                        <td><img src="{{this.picture}}" alt=""></td>
+                        <td><button class="btn-alert">Edit</button></td>
+                        <td><button class="btn-danger">Delete</button></td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>

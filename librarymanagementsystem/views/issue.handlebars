@@ -1,0 +1,52 @@
+<div class="main-body">
+    <div class="add-form-section">
+        <form action="/book/issue" method="post">
+            <div class="form-group">
+                <select name="book" id="" class="form-control">
+                    <option value="0">--Select--</option>
+                    {{#each books}}
+                        <option value="{{this.id}}">{{this.name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="form-group">
+                <select name="user" class="form-control" id="">
+                    <option value="0">--Select--</option>
+                    {{#each users}}
+                        <option value="{{this.id}}">{{this.name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="number" name="days" class="form-control" placeholder="No .of Days" id="">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-primary">Issue</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="table-section">
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>User</th>
+                <th>Book</th>
+                <th>Issue for days</th>
+                <th colspan="2">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each issues}}
+             <tr>
+                 <td>{{this.id}}</td>
+                 <td>{{this.username}}</td>
+                 <td>{{this.bookname}}</td>
+                 <td>{{this.days}}</td>
+                 <td><button class="btn-danger">Delete</button></td>
+             </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

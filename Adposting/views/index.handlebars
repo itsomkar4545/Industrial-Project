@@ -1,0 +1,11 @@
+<div class="main-body">
+    {{#each ads}}
+    <div class="ad-section">
+        <img src="{{this.picture}}" alt="{{this.title}}">
+        <h4>{{this.title}}</h4>
+        <p class="category-heading">{{this.category}}</p>
+        <p class="posted-heading">{{this.postedby}}</p>
+        <p>{{this.description}}</p>
+    </div>
+    {{/each}}
+</div>
