@@ -1,0 +1,26 @@
+<div class="main-body">
+    <div class="info-section">
+        <div class="user-count-section">
+                {{this.user}}
+                <h4>Users registered</h4>
+        </div>
+        <div class="job-count-section">
+                {{this.jobs}}
+                <h4>Jobs posted</h4>
+        </div>
+        <div class="company-count-section">
+                {{this.company}}
+                <h4>Companies registered</h4>
+        </div>
+    </div>
+    <div class="job-section">
+        {{#each jobs}}
+            <div class="job">
+                <h2>{{this.title}}</h2>
+                <p class="posted">posted by :- {{this.postedby}}</p>
+                <p>{{this.description}}</p>
+                <button class="btn-apply">Apply</button>
+            </div>
+        {{/each}}
+    </div>
+</div>

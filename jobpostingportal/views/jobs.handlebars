@@ -1,0 +1,10 @@
+<div class="main-body">
+    {{#each jobs}}
+        <div class="job-section">
+            <h2>{{this.title}}</h2>
+            <p class="posted-by">{{this.postedby}}</p>
+            <p class="descrption">{{this.description}}</p>
+            <button class="btn-apply">Apply</button>
+        </div>
+    {{/each}}
+</div>
