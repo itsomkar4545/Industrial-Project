@@ -6,4 +6,15 @@ const db=mysql.createConnection({
     password:'seed',
     multipleStatements:true
 });
+db.connect((err,result)=>{
+    if(!err)
+    {
+        console.log('database connected');
+    }
+    else
+    {
+        console.log('error '+err);
+    }
+
+});
 module.exports=db;

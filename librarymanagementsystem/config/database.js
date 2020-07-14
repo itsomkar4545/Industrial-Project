@@ -7,4 +7,14 @@ const db=mysql.createConnection({
     port:'3306',
     multipleStatements:true
 });
+db.connect((err,result)=>{
+    if(!err)
+    {
+        console.log('database connected');
+    }
+    else
+    {
+        console.log('error '+err);
+    }
+});
 module.exports=db;
