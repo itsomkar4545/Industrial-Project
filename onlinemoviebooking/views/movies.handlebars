@@ -1,0 +1,10 @@
+<div class="main-body">
+    {{#each movies}}
+        <div class="movies-section">
+            <img src="{{this.image}}" alt="">
+            <h4>{{this.moviename}}</h4>
+            <p>{{this.genre}}</p>
+            <button class="btn-booking">Book</button>
+        </div>
+    {{/each}}
+</div>

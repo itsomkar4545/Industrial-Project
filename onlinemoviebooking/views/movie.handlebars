@@ -1,0 +1,27 @@
+<div class="main-body">
+    <div class="movie-poster-section">
+        {{#each movie}}
+            <img src="{{this.image}}" alt="">
+            <h4>{{this.name}}</h4>
+            <p>{{this.genre}}</p>
+        {{/each}}
+    </div>
+    <div class="form-section">
+        <form action="/show/book" method="post">
+            <div class="form-group">
+                <input type="email" placeholder="Email" name="email" id="" class="form-control">
+            </div>
+            <div class="form-group">
+                <select name="timing" id="" class="form-control">
+                    <option value="0">--Select--</option>
+                    {{#each shows}}
+                        <option value="{{this.id}}">{{this.timings}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="form-group">
+                <button class="btn-booking">Book</button>
+            </div>
+        </form>
+    </div>
+</div>
