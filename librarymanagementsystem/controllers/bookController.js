@@ -2,6 +2,7 @@ const express=require('express');
 const router=express.Router();
 const db=require('../config/database');
 const multer=require('multer');
+const cloudinary=require('cloudinary');
 const storage=multer.diskStorage({
     filename:(req,file,callback)=>{
         callback(null,Date.now()+file.originalname);

@@ -35,7 +35,7 @@ router.get('/',(req,res)=>{
         }
     });
 });
-route.get('/users',(req,res)=>{
+router.get('/users',(req,res)=>{
     let sql='select * from users';
      db.query(sql,(err,result)=>{
          if(!err)
