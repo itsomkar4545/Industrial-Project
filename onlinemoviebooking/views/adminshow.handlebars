@@ -1,0 +1,69 @@
+<div class="main-body">
+    <div class="create-form-section">
+        <div class="form-group">
+            <select name="movie" id="" class="form-control">
+                <option value="0">--Select--</option>
+                    {{#each movies}}
+                        <option value="{{this.id}}">{{this.name}}</option>
+                    {{/each}}
+            </select>
+        </div>
+        <div class="form-group">
+            <select name="timing" id="" class="form-control">
+                <option value="0">--Select--</option>
+                {{#each timings}}
+                    <option value="{{this.id}}">{{this.timing}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="form-group">
+            <button class="btn-primary">Add</button>
+        </div>
+    </div>
+    <div class="update-form-section">
+        <form  id="update-show-form">
+           <div class="form-group">
+            <select name="movie" id="" class="form-control">
+                <option value="0">--Select--</option>
+                    {{#each movies}}
+                        <option value="{{this.id}}">{{this.name}}</option>
+                    {{/each}}
+            </select>
+        </div>
+        <div class="form-group">
+            <select name="timing" id="" class="form-control">
+                <option value="0">--Select--</option>
+                {{#each timings}}
+                    <option value="{{this.id}}">{{this.timing}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="form-group">
+            <button class="btn-primary">Update</button>
+        </div>
+        </form>
+    </div>
+</div>
+<div class="table-section">
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Movie</th>
+                <th>Timing</th>
+                <th colspan="2">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each shows}}
+                <tr>
+                    <td>{{this.id}}</td>
+                    <td>{{this.movie}}</td>
+                    <td>{{this.timing}}</td>
+                    <td><button class="btn-alert">Edit</button></td>
+                    <td><button class="btn-danger">Delete</button></td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
