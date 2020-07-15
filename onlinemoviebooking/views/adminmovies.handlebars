@@ -1,6 +1,6 @@
 <div class="main-body">
     <div class="create-form-section">
-        <form action="/movie/creatte" method="post">
+        <form action="/movie/create" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <input type="text" name="name" placeholder="Name" id="" class="form-control">
             </div>
@@ -28,6 +28,7 @@
                <th>Id</th>
                <th>Name</th>
                <th>Picture</th>
+               <th>Genre</th>
                <th colspan="2">Action</th>
            </tr>
        </thead> 
@@ -37,6 +38,7 @@
                     <td>{{this.id}}</td>
                     <td>{{this.name}}</td>
                     <td><img src="{{this.picture}}" alt=""></td>
+                    <td>{{this.genre}}</td>
                     <td><button class="btn-alert">Delete</button></td>
                 </tr>
            {{/each}}

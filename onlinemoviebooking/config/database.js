@@ -1,6 +1,6 @@
 const mysql=require('mysql');
 const db=mysql.createConnection({
-    database:'movietiming',
+    database:'movietime',
     host:'localhost',
     port:'3306',
     user:'root',
