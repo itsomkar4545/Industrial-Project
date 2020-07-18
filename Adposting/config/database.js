@@ -3,7 +3,8 @@ const db=mysql.createConnection({
     host:'localhost',
     port:'3306',
     database:'adposting',
-    password:'seed',
+    user:'root',
+    password:'root',
     multipleStatements:true
 });
 db.connect((err,result)=>{

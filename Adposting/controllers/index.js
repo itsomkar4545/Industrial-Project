@@ -1,6 +1,7 @@
 const express=require('express');
 const db=require('../config/database');
 const router=express.Router();
+
 router.get('/',(req,res)=>{
     let sql='select ads.id as id,ads.title,ads.description,category.name as category,user.name as postedby,ads.picture from ads join category on ads.category=category.id join user on ads.postedby=user.id ';
     db.query(sql,(err,result)=>{
@@ -20,6 +21,11 @@ router.get('/register',(req,res)=>{
 router.get('/postad',(req,res)=>{
     res.render('adpost');
 });
+
+router.get('/about',(req,res)=>{
+    res.render('about');
+});
+
 router.get('/ad/:id',(req,res)=>{
     const {id}=req.params;
     let sql='select ads.id as id,ads.title,ads.description,category.name as category,user.name as username,user.email as email,ads.picture from ads join category on ads.category=category.id join user on ads.postedby=user.id where ads.id=?';

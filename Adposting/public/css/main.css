@@ -24,10 +24,12 @@ nav ul
 {
     margin-top: 5vh;
     margin-left: 10vw;
+    border-radius: 1.5px; 
 }
 .form-group
 {
     margin-bottom: 2vh;
+    border-radius: 1.5px;
 }
 .form-control
 {
@@ -41,4 +43,11 @@ nav ul
 {
     margin-left: 2vw;
     font-size: large;
+    border-radius: 1.5px;
+}
+
+
+body {
+ background-image: url("Pictures\nightsky.jfif");
+ background-color: #cccccc;
 }
